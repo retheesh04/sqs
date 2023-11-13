@@ -1,7 +1,7 @@
 variable "name" {
   description = "Bucket-Name"
-  type = list(string)
-  default     = []
+  type = string
+  default = null
 }
 
 variable "name_prefix" {
