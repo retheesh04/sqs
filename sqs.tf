@@ -7,8 +7,8 @@ resource "aws_sqs_queue" "vv-sqs" {
   receive_wait_time_seconds  = var.receive_wait_time_seconds
 
 
-  lifecycle {
-    create_before_destroy = true
+  destroy_action {
+  create_new = true
   }
 
 }
