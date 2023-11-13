@@ -6,4 +6,8 @@ resource "aws_sqs_queue" "vv-sqs" {
   delay_seconds              = var.delay_seconds
   receive_wait_time_seconds  = var.receive_wait_time_seconds
 
+  lifecycle {
+    prevent_destroy = true
+  }
+
 }
