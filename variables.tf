@@ -3,6 +3,10 @@ variable "name" {
   type = string
   default = null
 }
+variable "title" {
+   type = string
+    default = null
+}
 
 variable "name_prefix" {
   description = "A unique name beginning with the specified prefix."
